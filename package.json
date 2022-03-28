@@ -1,0 +1,17 @@
+{
+  "name": "com.affencode.unity-utils",
+  "author": "AffenCode",
+  "displayName": "AffenCode Utils",
+  "description": "Various Unity utils and extensions.",
+  "unity": "2018.4",
+  "version": "1.0.0",
+  "keywords": [
+    "Utils", 
+    "Extensions"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleverdes/unity-utils.git"
+  }
+}
