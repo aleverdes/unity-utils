@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-namespace AffenCode.Utils
+namespace AffenCode
 {
     public static class FastDistance
     {

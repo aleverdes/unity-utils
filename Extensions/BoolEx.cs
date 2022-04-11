@@ -1,6 +1,5 @@
 using System.Runtime.CompilerServices;
-
-namespace AffenCode.Utils
+namespace AffenCode
 {
     public static class BoolEx
     {
