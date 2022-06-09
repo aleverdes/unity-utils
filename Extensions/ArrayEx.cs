@@ -13,5 +13,10 @@ namespace AffenCode
 
             return array;
         }
+
+        public static T GetRandomElement<T>(this T[] array)
+        {
+            return array[Random.Range(0, array.Length)];
+        }
     }
 }
