@@ -12,5 +12,10 @@ namespace AffenCode
         {
             return new Vector3(vec.x, 0, vec.y);
         }
+        
+        public static Vector3 ToXY0(this Vector2 vec)
+        {
+            return new Vector3(vec.x, vec.y, 0);
+        }
     }
 }
