@@ -13,6 +13,20 @@ namespace AffenCode
 
             return array;
         }
+        
+        public static T[] Shuffle<T> (this T[] array, int seed)
+        {
+            var rng = new System.Random(seed);
+            var length = array.Length;
+            while (length > 1)
+            {
+                length--;
+                var k = rng.Next(length + 1);
+                (array[k], array[length]) = (array[length], array[k]);
+            }
+
+            return array;
+        }
 
         public static T GetRandomElement<T>(this T[] array)
         {
