@@ -54,5 +54,15 @@ namespace AffenCode
             v.y = sin * tx + cos * ty;
             return v;
         }
+
+        public static Vector3 ToHorizontal(this Vector3 v)
+        {
+            return new Vector3(v.x, 0, v.z);
+        }
+
+        public static Vector3 ToVertical(this Vector3 v)
+        {
+            return new Vector3(0, v.y, 0);
+        }
     }
 }
