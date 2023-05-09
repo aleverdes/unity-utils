@@ -1,4 +1,3 @@
-using AffenCode;
 using UnityEngine;
 
 namespace AffenCode
