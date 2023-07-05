@@ -17,5 +17,10 @@ namespace AffenCode
         {
             return Vector2.SignedAngle(vector2, Vector2.up);
         }
+
+        public static float Vector2ToDegree(Vector2 vector2, Vector2 axis)
+        {
+            return Vector2.SignedAngle(vector2, axis);
+        }
     }
 }
