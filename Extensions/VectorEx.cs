@@ -3,6 +3,11 @@ namespace AffenCode
 {
     public static class VectorEx
     {
+        public static Vector2 ToXY(this Vector3 vec)
+        {
+            return new Vector2(vec.x, vec.y);
+        }
+        
         public static Vector2 ToXZ(this Vector3 vec)
         {
             return new Vector2(vec.x, vec.z);
