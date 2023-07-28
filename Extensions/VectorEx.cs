@@ -38,6 +38,11 @@ namespace AffenCode
             return new Vector3(vec.x, vec.y, z);
         }
 
+        public static Vector3 WithZ(this Vector2 vec, float z)
+        {
+            return new Vector3(vec.x, vec.y, z);
+        }
+
         public static Vector2 WithX(this Vector2 vec, float x)
         {
             return new Vector2(x, vec.y);
