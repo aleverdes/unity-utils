@@ -74,5 +74,10 @@ namespace AffenCode
         {
             return new Vector3(0, v.y, 0);
         }
+
+        public static float GetRandom(this Vector2 v)
+        {
+            return Random.Range(v.x, v.y);
+        }
     }
 }
