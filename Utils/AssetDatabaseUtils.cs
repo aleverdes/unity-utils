@@ -37,6 +37,39 @@ namespace AleVerDes
             return null;
         }
 
+        public static ScriptableObject FindObject(Type type, string folder = null)
+        {
+#if UNITY_EDITOR
+            var assetGuids = string.IsNullOrEmpty(folder) 
+                ? AssetDatabase.FindAssets("t:" + type.Name)  
+                : AssetDatabase.FindAssets("t:" + type.Name, new []{folder});
+            foreach (var assetGuid in assetGuids)
+            {
+                return AssetDatabase.LoadAssetAtPath<ScriptableObject>(AssetDatabase.GUIDToAssetPath(assetGuid));
+            }
+            return null;
+#endif
+            return null;
+        }
+
+        public static ScriptableObject[] FindObjects(Type type, string folder = null)
+        {
+#if UNITY_EDITOR
+            var assetGuids = string.IsNullOrEmpty(folder) 
+                ? AssetDatabase.FindAssets("t:" + type.Name) 
+                : AssetDatabase.FindAssets("t:" + type.Name, new []{folder});
+            
+            var assets = new ScriptableObject[assetGuids.Length];
+            for (var i = 0; i < assetGuids.Length; i++)
+            {
+                var assetGuid = assetGuids[i];
+                assets[i] = AssetDatabase.LoadAssetAtPath<ScriptableObject>(AssetDatabase.GUIDToAssetPath(assetGuid));
+            }
+            return assets;
+#endif
+            return Array.Empty<ScriptableObject>();
+        }
+
         public static T FindObject<T>(string folder = null) where T : Object
         {
 #if UNITY_EDITOR
