@@ -7,7 +7,7 @@ namespace AffenCode
     {
         public static Transform FindRecursive(this Transform self, string exactName) => self.FindRecursive(child => child.name == exactName);
 
-        public static Transform FindRecursive(this Transform self, Func<Transform, bool> selector)
+        public static Transform FindRecursive(this Transform self, Predicate<Transform> selector)
         {
             foreach (Transform child in self)
             {
@@ -25,6 +25,13 @@ namespace AffenCode
             }
 
             return null;
+        }
+
+        public static void Reset(this Transform self)
+        {
+            self.localPosition = Vector3.zero;
+            self.localRotation = Quaternion.identity;
+            self.localScale = Vector3.one;
         }
     }
 }
