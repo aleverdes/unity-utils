@@ -27,6 +27,21 @@ namespace AffenCode
             return null;
         }
 
+        public static void ResetPosition(this Transform self)
+        {
+            self.localPosition = Vector3.zero;
+        }
+
+        public static void ResetRotation(this Transform self)
+        {
+            self.localPosition = Vector3.zero;
+        }
+
+        public static void ResetScale(this Transform self)
+        {
+            self.localPosition = Vector3.zero;
+        }
+
         public static void Reset(this Transform self)
         {
             self.localPosition = Vector3.zero;
