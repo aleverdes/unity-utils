@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 
-namespace AffenCode
+namespace AleVerDes
 {
     public static class IntEx
     {

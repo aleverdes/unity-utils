@@ -1,5 +1,5 @@
 using System;
-namespace AffenCode
+namespace AleVerDes
 {
     public static class EnumUtils
     {

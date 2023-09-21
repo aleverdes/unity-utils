@@ -1,5 +1,5 @@
 using System.IO;
-namespace AffenCode
+namespace AleVerDes
 {
     public static class FileSystemInfoEx
     {
