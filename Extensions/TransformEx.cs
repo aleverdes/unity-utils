@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace AleVerDes
+namespace AleVerDes.UnityUtils
 {
     public static class TransformEx
     {

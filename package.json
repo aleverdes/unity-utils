@@ -1,7 +1,7 @@
 {
-  "name": "com.affencode.unity-utils",
-  "author": "AffenCode",
-  "displayName": "AffenCode Utils",
+  "name": "com.aleverdes.unity-utils",
+  "author": "AleVerDes",
+  "displayName": "AleVerDes Unity Utils",
   "description": "Various Unity utils and extensions.",
   "unity": "2018.4",
   "version": "1.0.0",

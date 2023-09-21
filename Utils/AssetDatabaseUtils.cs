@@ -7,7 +7,7 @@ using System.IO;
 using UnityEditor;
 #endif
 
-namespace AleVerDes
+namespace AleVerDes.UnityUtils
 {
     public static class AssetDatabaseUtils
     {

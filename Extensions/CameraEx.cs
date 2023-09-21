@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace AleVerDes
+namespace AleVerDes.UnityUtils
 {
     public static class CameraEx
     {

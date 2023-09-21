@@ -1,6 +1,6 @@
 using System.IO;
 using UnityEngine;
-namespace AleVerDes
+namespace AleVerDes.UnityUtils
 {
     public static class UnityProject
     {

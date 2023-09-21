@@ -1,5 +1,5 @@
 using System.Runtime.CompilerServices;
-namespace AleVerDes
+namespace AleVerDes.UnityUtils
 {
     public static class BoolEx
     {

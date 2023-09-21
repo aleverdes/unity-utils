@@ -1,5 +1,5 @@
 using System;
-namespace AleVerDes
+namespace AleVerDes.UnityUtils
 {
     public static class EnumUtils
     {
