@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 namespace AleVerDes.UnityUtils
 {
@@ -31,6 +32,11 @@ namespace AleVerDes.UnityUtils
         public static T GetRandomElement<T>(this T[] array)
         {
             return array[Random.Range(0, array.Length)];
+        }
+
+        public static T GetRandomElement<T>(this List<T> array)
+        {
+            return array[Random.Range(0, array.Count)];
         }
     }
 }
