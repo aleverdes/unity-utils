@@ -22,5 +22,10 @@ namespace AleVerDes.UnityUtils
         {
             return Vector2.SignedAngle(vector2, axis);
         }
+
+        public static Vector2 GetRandomVector()
+        {
+            return DegreeToVector2(360f * Random.value);
+        }
     }
 }
